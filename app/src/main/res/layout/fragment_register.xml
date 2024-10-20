@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="338dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBackSignIn"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/back"
+                android:text=""
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="481dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:gravity="center|top"
+            android:text="Regístrate"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="50sp"
+            android:textStyle="bold|italic" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center|top">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txti_Nombre"
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:textSize="20sp"
+                android:maxLength="50"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center|top">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txti_email"
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:hint="Correo electrónico"
+                android:inputType="text|textEmailSubject"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:maxLength="100"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:endIconMode="password_toggle"
+            android:gravity="center|top"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txti_password"
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:inputType="text|textPassword|textNoSuggestions"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:maxLength="30"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="220sp"
+            android:layout_height="60sp"
+            android:text="Registrarse"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+</LinearLayout>
